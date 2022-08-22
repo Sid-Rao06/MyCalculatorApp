@@ -6,15 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!-- https://www.geeksforgeeks.org/how-to-create-customized-buttons-in-android-with-different-shapes-and-colors/
+        --><![CDATA[
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.445" />
+
+
+
+    ]]>
+
     <Button
-        android:onClick="findDifference"
         android:id="@+id/subtraction"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="104dp"
+        android:layout_marginStart="100dp"
+        android:background="@drawable/p2"
+        android:onClick="findDifference"
         android:text="-"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/addition"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.445" />
 
@@ -25,6 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="104dp"
         android:text="X"
+        android:background="@drawable/p2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -37,6 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="4dp"
         android:text="÷"
+        android:background="@drawable/p2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -49,6 +63,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:text="+"
+        android:background="@drawable/p2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -99,9 +114,11 @@
         android:id="@+id/answer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="264dp"
         android:layout_marginBottom="212dp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
