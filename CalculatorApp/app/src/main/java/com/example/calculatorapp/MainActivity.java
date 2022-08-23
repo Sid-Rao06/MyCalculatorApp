@@ -19,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
         EditText number2ET = findViewById(R.id.secondNum);
         TextView numberSumTV = findViewById(R.id.answer);
 
-        double num1 = Integer.parseInt((number1ET.getText().toString()));
-        double num2 = Integer.parseInt((number2ET.getText().toString()));
+        double num1 = Double.parseDouble((number1ET.getText().toString()));
+        double num2 = Double.parseDouble((number2ET.getText().toString()));
         double sum = num1 + num2;
 
         numberSumTV.setText("" + sum);
@@ -31,8 +31,8 @@ public class MainActivity extends AppCompatActivity {
         EditText number2ET = findViewById(R.id.secondNum);
         TextView numberSumTV = findViewById(R.id.answer);
 
-        double num1 = Integer.parseInt((number1ET.getText().toString()));
-        double num2 = Integer.parseInt((number2ET.getText().toString()));
+        double num1 = Double.parseDouble((number1ET.getText().toString()));
+        double num2 = Double.parseDouble((number2ET.getText().toString()));
         double sum = num1 - num2;
 
         numberSumTV.setText("" + sum);
@@ -43,8 +43,8 @@ public class MainActivity extends AppCompatActivity {
         EditText number2ET = findViewById(R.id.secondNum);
         TextView numberSumTV = findViewById(R.id.answer);
 
-        double num1 = Integer.parseInt((number1ET.getText().toString()));
-        double num2 = Integer.parseInt((number2ET.getText().toString()));
+        double num1 = Double.parseDouble((number1ET.getText().toString()));
+        double num2 = Double.parseDouble((number2ET.getText().toString()));
         double sum = num1 * num2;
 
         numberSumTV.setText("" + sum);
@@ -55,8 +55,8 @@ public class MainActivity extends AppCompatActivity {
         EditText number2ET = findViewById(R.id.secondNum);
         TextView numberSumTV = findViewById(R.id.answer);
 
-        double num1 = Integer.parseInt((number1ET.getText().toString()));
-        double num2 = Integer.parseInt((number2ET.getText().toString()));
+        double num1 = Double.parseDouble((number1ET.getText().toString()));
+        double num2 = Double.parseDouble((number2ET.getText().toString()));
         double sum = num1 / num2;
 
         numberSumTV.setText("" + sum);
