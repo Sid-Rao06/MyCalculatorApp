@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:id="@+id/myCoordinatorLayout">
 
     <!-- https://www.geeksforgeeks.org/how-to-create-customized-buttons-in-android-with-different-shapes-and-colors/
         --><![CDATA[
@@ -112,15 +113,15 @@
 
     <TextView
         android:id="@+id/answer"
-        android:layout_width="205dp"
-        android:layout_height="35dp"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
         android:hint='"answer here"'
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintHorizontal_bias="0.645"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.667" />
+        app:layout_constraintVertical_bias="0.908" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
